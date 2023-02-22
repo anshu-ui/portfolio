@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <!--==CSS==============================-->
+    <link rel="stylesheet" href="{% static 'connect.css' %}">
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--==Poppins-font=====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--==Using-Font-Awesome-for-Icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>connect</title>
+</head>
+<body>
+    <section id="main">
+        <!--==navigation========================-->
+        <nav class="navigation">
+            <!--logo-->
+            <a href="index.html" class="logo">Portfolio.</a>
+            <!--menu-btn-------->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="{% url 'home' %}" class="active">Home</a></li>
+                <li><a href="{% url 'home' %}">About</a></li>
+                <li><a href="#">Connect</a></li>
+            </ul>
+            <!--contact-btn-->
+            <a href="#" class="nav-contact-btn">Chat Now</a>
+        </nav>
+    <div class="main">
+        <div class="main-form">
+            <H1>Connect With Me!</H1>
+        </div>
+        <div class="form1">
+            <form method="Post" action="/connect">
+                {% csrf_token %}
+                
+                <div class="name1">
+                    <input type="text" class="name" name ="name" placeholder="Enter Your Name">
+                </div>
+                <div class="email1">
+                    <input type="email" class="email" name="email"  placeholder="Enter Your Email">
+                </div>
+                <div class="Phone">
+                    <input type="phone" class="phone" name= "phone" placeholder="Enter Your Phone Number">
+
+                </div>
+                <div class="desc">
+                    <input type="text" class="desc1" name = "desc1" placeholder="Type user message here..">
+                </div>
+                <div class="btn">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+    </div>
+    
+    </div>
+    <section class="Footer">
+        <!--**social**********-->
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/anshu-ui"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://www.linkedin.com/in/amit-chauhan-678351188/"><i class="fa-brands fa-linkedin"></i></a>
+            <a>amit.1drona@gmail.com</a>
+        </div>
+        <!--**Copyright*******-->
+        <span class="copyright">&#169; Copyright 2023</span>
+        
+    </section>
+
+</body>
+</html>

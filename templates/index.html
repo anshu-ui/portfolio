@@ -1,0 +1,233 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==Titile===========================-->
+    <title>amit_chauhan</title>
+    {% load static %}
+    <!--==CSS==============================-->
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <!--==Fav-icon=========================-->
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--==Poppins-font=====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--==Using-Font-Awesome-for-Icons=====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    
+    <section id="main">
+        <!--==navigation========================-->
+        <nav class="navigation">
+            <!--logo-->
+            <a href="index.html" class="logo">Portfolio.</a>
+            <!--menu-btn-------->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about-us">About Me</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="/connect">Connect</a></li>
+            </ul>
+            <!--contact-btn-->
+            <a href="#" class="nav-contact-btn">Chat Now</a>
+        </nav>
+
+        <!--==main-text==========================-->
+        <div class="main-text">
+            <h1>Hello, I am <span>Mechanical Engineer.</span><br><br> 
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/anshu-ui"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/amit-chauhan-678351188/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+        </div>
+        <!--==img================================-->
+        <img alt="Main Image - Portfolio Website" src="/static/2.jpg">
+    </section>
+
+
+
+    <!--==Expert=====================================-->
+    <section id="expert-in">
+        <div class="expert-container">  
+            <!--==box==================-->
+            <div class="expert-box">
+                <!--icon-->
+                <div class="expert-b-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <!--text-->
+                <div class="expert-b-text">
+                    <strong>Mechanical-Engineering</strong>
+                    <span>3 Year's Experience</span>
+                </div>
+            </div>
+
+            <!--==box==================-->
+            <div class="expert-box">
+                <!--icon-->
+                <div class="expert-b-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <!--text-->
+                <div class="expert-b-text">
+                    <strong>DEEP LEARNING</strong>
+                    <span>1 Year's Experince</span>
+                </div>
+            </div>
+
+            <!--==box==================-->
+            <div class="expert-box">
+                <!--icon-->
+                <div class="expert-b-icon">
+                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                </div>
+                <!--text-->
+                <div class="expert-b-text">
+                    <strong>DJANGO DEVELOPER</strong>
+                    <span>    </span>
+                </div>
+            </div>
+
+            <!--==box==================-->
+           
+
+        </div>
+    </section>
+
+
+    <!--==contact-box=========================-->
+    <div class="contact-box">
+        <span><i class="fa-brands fa-facebook-messenger"></i></span>
+        <h2>Feel free to hit me up for any discussions, collaborations, recruitment, or feedback!</h2>
+        <a href="/connect"><i class="fa-solid fa-paper-plane"></i> Connect Me</a>
+    </div>
+
+    <!--==About===============================-->
+    <section id="about-us">
+        <!--**text*******************-->
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi!,<br>My name is Amit Kumar. I am a Mechanical Enginner. I am from Himachal Pardesh,currently in Pune.</p>
+            <p>Working on a project of leather defect detection using deep learning at Autoliv India company, my goal is to develop an accurate and efficient algorithm to detect various types of defects in leather. By leveraging the power of deep learning techniques, we can train a model that can learn to identify different types of defects such as scratches, stains, cuts, and more with high accuracy.</p>
+            <a href="https://drive.google.com/file/d/1eJD7133c7yFt9UdGaiv0GaUZbWsUuzUw/view?usp=drivesdk" class="download-cv" download>Download CV</a>
+            <div class="edu-container">
+            <!--box-->
+            <div class="education-box">
+                <span class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <div class="edu-box-text">
+                    <strong>Dronacharya college of Engineering</strong>
+                    <span class="edu-date">2015 - 2019</span>
+                </div>
+            </div>
+            <!--box-->
+            <!----
+            <div class="education-box">
+                <span class="edu-icon"><i class="fa-solid fa-briefcase"></i></span>
+                <div class="edu-box-text">
+                    <strong>A Youtuber</strong>
+                    <span class="edu-date">2019 - Present</span>
+                </div>
+            </div> -->
+            </div>
+        
+        </div>
+        <!--**img********************-->
+        <div class="about-img">
+            <img alt="About Me" src="/static/4.jpg"/>
+        </div>
+    </section>
+    
+
+    <!--==Services=============================-->
+    <section id="services">
+
+        <!--==Heading========-->
+        <div class="service-heading">
+            <h3>Work Experience</h3>
+            <!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum dolore, tenetur quo magnam aspernatur magni vel!</p>-->
+        </div>
+
+
+        <!--services-container==-->
+        <div class="services-container">
+
+            <!--**box***********-->
+            <div class="service-box">
+                <i class="fa-solid fa-gears"></i>
+                <strong>Autoliv India PVT LTD</strong>
+                <p>Autoliv is the worldwide leader in automotive safety systems. Develops,
+                     manufacture protective systems.</p>
+            </div>
+            <!--**box***********-->
+            <div class="service-box">
+                <i class="fa-solid fa-gears"></i>
+                <strong>Aditya Auto Pvt LTD</strong>
+                <p>Aditya is a specialized automotive supplier of mechatronic systems, precision components and motors with capabilities spanning right from concept to production. One in three vehicles made in India is fitted with an Aditya product.</p>
+            </div>
+            <!--**box***********-->
+            <div class="service-box">
+                <i class="fa-solid fa-pen-nib"></i>
+                <strong>Optimint Solution</strong>
+                <p>Optimint focuses on offshore software development and support services at our excellence centre in Gurugram, India.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==Portfolio============================-->
+    <section id="portfolio">
+        <!--**heading**************-->
+        <h3>Projects</h3>
+        <!--**boxes-container************-->
+        <div class="portfolio-container">
+            <!--box-->
+            <div class="portfolio-box">
+                <img src="/static/Mechanical-Engineering.jpeg" />
+                <a href="https://drive.google.com/file/d/1fGA3XFxtNneUDlQnEVuI8CKySvlbIGjr/view?usp=drivesdk">View <i class="fa-solid fa-eye"></i></a>
+            </div>
+            <!--box-->
+            <div class="portfolio-box">
+                <img src="/static/deep.jpeg" />
+                <a href="https://drive.google.com/file/d/1fEOjApJVjc8NG0hCQ8Ih73_IPf40hQnj/view?usp=drivesdk">View <i class="fa-solid fa-eye"></i></a>
+            </div>
+            <!--box-->
+            <div class="portfolio-box">
+                <img src="/static/web-development-stacks_.jpeg" />
+                <a href="https://github.com/anshu-ui?tab=repositories">View <i class="fa-solid fa-eye"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==Footer==========================-->
+    <footer>
+        <!--**social**********-->
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/anshu-ui"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://www.linkedin.com/in/amit-chauhan-678351188/"><i class="fa-brands fa-linkedin"></i></a>
+            <a>amit.1drona@gmail.com</a>
+        </div>
+        <!--**Copyright*******-->
+        <span class="copyright">&#169; Copyright 2023</span>
+        
+    </footer>
+
+</body>
+</html>
